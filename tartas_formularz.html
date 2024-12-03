@@ -1,12 +1,139 @@
 <!DOCTYPE html>
-	<html lang="pl-PL">
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<title> </title>
-		</head>
-		<body bgcolor="lightgreen">
-			Tu będzie formularz <br>
-			<A HREF="https://jakubtartas.github.io/spr1/tartas_menu.html"> powrót </A> <br>
-		</body>
-	</html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz zaproponowany przez nauczyciela</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="time"], input[type="date"], select {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="color"] {
+            width: 50px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+        }
+        .checkbox-group, .radio-group {
+            text-align: left;
+            display: inline-block;
+        }
+        .slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input[type="range"] {
+            margin: 0 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formularz o....................zaproponowany przez nauczyciela</h1>
+        <div class="section">
+            <label for="imie">Imię</label>
+            <input type="text" id="imie" name="imie">
+
+            <label for="drugie_imie">Drugie imię</label>
+            <input type="text" id="drugie_imie" name="drugie_imie">
+
+            <label for="nazwisko">Nazwisko</label>
+            <input type="text" id="nazwisko" name="nazwisko">
+
+            <label for="pseudonim">Pseudonim artystyczny</label>
+            <input type="text" id="pseudonim" name="pseudonim">
+        </div>
+
+        <div class="section">
+            <p>Czy umiesz programować?</p>
+            <div class="radio-group">
+                <label><input type="radio" name="programowanie" value="tak"> Tak</label>
+                <label><input type="radio" name="programowanie" value="nie"> Nie</label>
+                <label><input type="radio" name="programowanie" value="nie_wiem"> Nie wiem</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <label for="lokomocja" style="color: red;">Podaj środek lokomacji dojazdu do pracy</label>
+            <select id="lokomocja" name="lokomocja">
+                <option value="autobus">Autobus</option>
+                <option value="samochod">Samochód</option>
+                <option value="rower">Rower</option>
+                <option value="pieszo">Pieszo</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <p>Jaka jest Twoja ulubione ciastko?</p>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="ciastko" value="beza"> BEZA</label>
+                <label><input type="checkbox" name="ciastko" value="sernik"> SERNIK</label>
+                <label><input type="checkbox" name="ciastko" value="inne"> INNE</label>
+            </div>
+            <label for="inne_ciastko">Jeśli zaznaczyłeś INNE to podaj swoje ciastko poniżej. Maks: 100 znaków</label>
+            <input type="text" id="inne_ciastko" name="inne_ciastko" maxlength="100">
+        </div>
+
+        <div class="section">
+            <label for="czas">Podaj czas</label>
+            <input type="time" id="czas" name="czas">
+
+            <label for="data">Podaj datę</label>
+            <input type="date" id="data" name="data">
+
+            <label for="kolor">Wybierz kolor</label>
+            <input type="color" id="kolor" name="kolor" value="#000000">
+        </div>
+
+        <div class="section slider">
+            <label for="wilgotnosc">Jaka jest wilgotność</label>
+            <input type="range" id="wilgotnosc" name="wilgotnosc" min="0" max="100">
+            <span>Proszę czekać...</span>
+        </div>
+
+        <div class="buttons">
+            <button type="button">Przycisk niespodzianka</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Wyślij zapytanie</button>
+        </div>
+    </div>
+</body>
+</html>
