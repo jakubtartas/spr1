@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Wykonał: Jakub Tartas -->
 <html lang="pl">
   <head>
     <meta charset="UTF-8">
@@ -11,16 +12,12 @@
       }
 
       .form-section {
-        margin-bottom: 5px;
+        margin-bottom: 20px;
       }
 
       label {
         font-weight: bold;
-      }
-      
-      sublabel{
-          font-weight: bold;
-          font-size: 0.9em;
+        font-size: 1rem;
       }
 
       input,
@@ -28,21 +25,22 @@
       textarea,
       button {
         display: block;
-        margin: 7px 0;
+        margin: 10px 0;
         padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
       }
 
       .form-container {
         display: flex;
+        flex-wrap: wrap;
       }
 
-      .left-section {
-        flex: 1;
-      }
-
+      .left-section,
       .right-section {
         flex: 1;
-        margin-left: 20px;
+        min-width: 300px;
+        margin: 10px;
       }
 
       .form-buttons {
@@ -65,11 +63,13 @@
     </style>
   </head>
   <body>
-           <center> 
-            <font size="6"><i><b>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</b></i></font><br><br>
-            </center>
+    <!-- Wykonał: Jakub Tartas -->
+    <center>
+      <font size="6"><i><b>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</b></i></font><br><br>
+    </center>
     <form action="#" method="POST" onsubmit="location.reload(); return false;">
       <div class="form-container">
+        <!-- Wykonał: Jakub Tartas -->
         <div class="left-section">
           <div class="form-section">
             <label for="login">Login:</label>
@@ -81,6 +81,7 @@
             <label for="surname">Nazwisko:</label>
             <input type="text" id="surname" name="surname">
             <label for="email">Podaj E-mail:</label>
+            <!-- Wykonał: Jakub Tartas -->
             <input type="email" id="email" name="email">
             <label for="address">Adres zamieszkania:</label>
             <input type="text" id="address" name="address">
@@ -92,6 +93,7 @@
             <select id="wojewodztwo" name="wojewodztwo">
               <option value="pomorskie">Pomorskie</option>
               <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
+           <!-- Wykonał: Jakub Tartas -->
               <option value="warmińsko-mazurkskie">Warmińsko-mazurskie</option>
               <option value="podlaskie">Podlaskie</option>
             </select>
@@ -100,19 +102,18 @@
           </div>
           <div class="form-section">
             <label>Wybierz kolor oczu:</label>
-            <br>
-            <br>
-            <sublabel for="niebieskie">Niebieskie</sublabel>
+            <label for="niebieskie">Niebieskie</label>
             <input type="radio" id="niebieskie" name="kolor_oczu" value="niebieskie">
-            <sublabel for="brazowe">Brązowe</sublabel>
+            <label for="brazowe">Brązowe</label>
             <input type="radio" id="brazowe" name="kolor_oczu" value="brazowe">
-            <sublabel for="zielone">Zielone</sublabel>
+            <label for="zielone">Zielone</label>
             <input type="radio" id="zielone" name="kolor_oczu" value="zielone">
-            <sublabel for="szare">Szare</sublabel>
+            <label for="szare">Szare</label>
             <input type="radio" id="szare" name="kolor_oczu" value="szare">
           </div>
         </div>
         <div class="right-section">
+          <!-- Wykonał: Jakub Tartas -->
           <div class="form-section">
             <label>Sport:</label>
             <select id="ulubiony_sport" name="ulubiony_sport">
@@ -125,25 +126,22 @@
             <select id="czestotliwosc" name="czestotliwosc">
               <option value="raz">Raz w tygodniu</option>
               <option value="dwa">Dwa razy w tygodniu</option>
+              <!-- Wykonał: Jakub Tartas -->
               <option value="trzy">Trzy razy w tygodniu</option>
               <option value="cztery">Cztery razy w tygodniu</option>
             </select>
             <label>Chcesz z nami trenować?</label>
-            <br>
-            <br>
-            <sublabel for="tak">Tak</sublabel>
+            <label for="tak">Tak</label>
             <input type="radio" id="tak" name="trenowanie" value="tak">
-            <sublabel for="nie">Nie</sublabel>
+            <label for="nie">Nie</label>
             <input type="radio" id="nie" name="trenowanie" value="nie">
-            <sublabel for="nie_wiem">Nie wiem</sublabel>
+            <label for="nie_wiem">Nie wiem</label>
             <input type="radio" id="nie_wiem" name="trenowanie" value="nie_wiem">
-<br>
+            <!-- Wykonał: Jakub Tartas -->
             <label>Jak bardzo lubisz sport?</label>
-            <br>
-            <br>
-            <sublabel for="bardzo">Bardzo</sublabel>
+            <label for="bardzo">Bardzo</label>
             <input type="radio" id="bardzo" name="lubi_sport" value="bardzo">
-            <sublabel for="srednio">Tak sobie</sublabel>
+            <label for="srednio">Tak sobie</label>
             <input type="radio" id="srednio" name="lubi_sport" value="srednio">
           </div>
           <div class="form-section">
@@ -154,6 +152,7 @@
               <option value="blisko_5">Blisko - do 5 km</option>
               <option value="blisko_10">Blisko - do 10 km</option>
               <option value="blisko_25">Poza - do 25 km</option>
+      <!-- Wykonał: Jakub Tartas -->
               <option value="poza_50">Poza - od 50 km</option>
             </select>
           </div>
@@ -166,3 +165,4 @@
     </form>
   </body>
 </html>
+<!-- Wykonał: Jakub Tartas -->
