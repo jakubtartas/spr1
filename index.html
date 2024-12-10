@@ -1,169 +1,45 @@
 <!DOCTYPE html>
-<!-- Wykonał: Jakub Tartas -->
-<html lang="pl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wykonał: Tartas</title>
-    <!-- Wykonał: Jakub Tartas -->
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #add8e6;
-      }
+<html lang="pl-PL">
+<head>
+<meta charset="utf-8">
+<meta name="Author" content="Jakub Tartas" />
+<title>Wykonał: Tartas</title>
+<!-- Data sprawdzianu: 15.10.2024, Autor: Jakub Tartas -->
+     
+    
+</head>
+   <body style="background-color: #BDEAA1; font-family: Arial, sans-serif; color: #332; margin: 0; padding: 0;">
+        <center> 
+            <font size="7" face="Arial" color="red"><i>Sklep Muzyczny</i></font>
+        </center>
 
-      .form-section {
-        margin-bottom: 20px;
-      }
+        <HR SIZE=3 WIDTH=100% ALIGN=LEFT>
 
-      label {
-        font-weight: bold;
-        font-size: 1rem;
-      }
+        <p align="center" class="highlight"><font size="4" color="black"> Nasz sklep muzyczny oferuje szeroki wybór produktów, sięgających od różnorodnych instrumentów muzycznych aż po najnowsze hity najpopularniejszych artystów!</font></p>
 
-      input,
-      select,
-      textarea,
-      button {
-        display: block;
-        margin: 10px 0;
-        padding: 5px;
-        width: 100%;
-        box-sizing: border-box;
-      }
+        <p align="left"><font size="3" face="Comic Sans" color="black"> Nasi eksperci z radością pomogą ci w wyboże idealnego intstrumentu lub ulubionych piosenek!. <b>Prowadzimy sprzedaż zarówno online, jak i w naszym sklepie stacjonarnym</u>.</font></p>
+	<center><img src="https://th.bing.com/th/id/OIP.F5ViSmU1QiIslR8vtwvc2gHaHD?w=186&h=180&c=7&r=0&o=5&pid=1.7" alt="Logo_tartas.jpg" width="700" height="200" border="6" style="border-color: black;"> </center>
 
-      .form-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
+        <p align="left"><font size="5" face="Arial" color="black"> Oferujemy szeroki wybór instrumentów muzycznych: od eleganckich pianin na specjalne okazje po wygodne gitary akustyczne do codziennego grania. Nasi specjaliści doradzą Ci w wyborze idealnego instrumentu, który będzie zarówno wygodny, jak i doskonale brzmiący. Dzięki naszym produktom Twoja muzyczna podróż będzie pełna harmonii i radości.</font></p>
 
-      .left-section,
-      .right-section {
-        flex: 1;
-        min-width: 300px;
-        margin: 10px;
-      }
+        <hr width="65%" align="center" size="5">
 
-      .form-buttons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
+        <b>Oferty naszego sklepu muzycznego obejmują:</b>
+        <ul type="square">
+            <li>Sprzedaż wszelakich typów instrumentów muzycznych</li>
+            <li>Sprzedaż akcesoriów muzycznych</li>
+            <li>Usługi serwisowe i naprawa instrumentów muzycznych</li>
+            <li>Wynajem instrumentów muzycznych na specjalne okazje</li>
+	    <li>Pomoc w doborze instrumentów muzycznych</li>
+        </ul>
 
-      .form-buttons button {
-        flex: 1;
-        max-width: 300px;
-        padding: 15px;
-        font-size: 18px;
-      }
+        <hr width="60%" align="left" size="6">
 
-      textarea {
-        resize: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Wykonał: Jakub Tartas -->
-    <center>
-      <font size="6"><i><b>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</b></i></font><br><br>
-    </center>
-    <form action="#" method="POST" onsubmit="location.reload(); return false;">
-      <div class="form-container">
-        <!-- Wykonał: Jakub Tartas -->
-        <div class="left-section">
-          <div class="form-section">
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login" maxlength="30">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name">
-            <label for="password">Podaj hasło:</label>
-            <input type="password" id="password" name="password" maxlength="30">
-            <label for="surname">Nazwisko:</label>
-            <input type="text" id="surname" name="surname">
-            <label for="email">Podaj E-mail:</label>
-            <!-- Wykonał: Jakub Tartas -->
-            <input type="email" id="email" name="email">
-            <label for="address">Adres zamieszkania:</label>
-            <input type="text" id="address" name="address">
-            <label for="phone">Numer telefonu (max 9 cyfr):</label>
-            <input type="text" id="phone" name="phone" maxlength="9">
-          </div>
-          <div class="form-section">
-            <label for="wojewodztwo">Województwo:</label>
-            <select id="wojewodztwo" name="wojewodztwo">
-              <option value="pomorskie">Pomorskie</option>
-              <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
-           <!-- Wykonał: Jakub Tartas -->
-              <option value="warmińsko-mazurkskie">Warmińsko-mazurskie</option>
-              <option value="podlaskie">Podlaskie</option>
-            </select>
-            <label for="miasto">Miasto:</label>
-            <input type="text" id="miasto" name="miasto">
-          </div>
-          <div class="form-section">
-            <label>Wybierz kolor oczu:</label>
-            <label for="niebieskie">Niebieskie</label>
-            <input type="radio" id="niebieskie" name="kolor_oczu" value="niebieskie">
-            <label for="brazowe">Brązowe</label>
-            <input type="radio" id="brazowe" name="kolor_oczu" value="brazowe">
-            <label for="zielone">Zielone</label>
-            <input type="radio" id="zielone" name="kolor_oczu" value="zielone">
-            <label for="szare">Szare</label>
-            <input type="radio" id="szare" name="kolor_oczu" value="szare">
-          </div>
-        </div>
-        <div class="right-section">
-          <!-- Wykonał: Jakub Tartas -->
-          <div class="form-section">
-            <label>Sport:</label>
-            <select id="ulubiony_sport" name="ulubiony_sport">
-              <option value="pilka_reczna">Piłka ręczna</option>
-              <option value="pilka_nozna">Piłka nożna</option>
-              <option value="koszykowka">Koszykówka</option>
-              <option value="siatkowka">Siatkówka</option>
-            </select>
-            <label>Jak często trenujesz?</label>
-            <select id="czestotliwosc" name="czestotliwosc">
-              <option value="raz">Raz w tygodniu</option>
-              <option value="dwa">Dwa razy w tygodniu</option>
-              <!-- Wykonał: Jakub Tartas -->
-              <option value="trzy">Trzy razy w tygodniu</option>
-              <option value="cztery">Cztery razy w tygodniu</option>
-            </select>
-            <label>Chcesz z nami trenować?</label>
-            <label for="tak">Tak</label>
-            <input type="radio" id="tak" name="trenowanie" value="tak">
-            <label for="nie">Nie</label>
-            <input type="radio" id="nie" name="trenowanie" value="nie">
-            <label for="nie_wiem">Nie wiem</label>
-            <input type="radio" id="nie_wiem" name="trenowanie" value="nie_wiem">
-            <!-- Wykonał: Jakub Tartas -->
-            <label>Jak bardzo lubisz sport?</label>
-            <label for="bardzo">Bardzo</label>
-            <input type="radio" id="bardzo" name="lubi_sport" value="bardzo">
-            <label for="srednio">Tak sobie</label>
-            <input type="radio" id="srednio" name="lubi_sport" value="srednio">
-          </div>
-          <div class="form-section">
-            <label for="informacje">Napisz dodatkowe informacje o sobie (max 150 znaków):</label>
-            <textarea id="informacje" name="informacje" maxlength="150" rows="4" style="resize: none;"></textarea>
-            <label>Mieszkasz w mieście czy poza?</label>
-            <select id="lokalizacja" name="lokalizacja">
-              <option value="blisko_5">Blisko - do 5 km</option>
-              <option value="blisko_10">Blisko - do 10 km</option>
-              <option value="blisko_25">Poza - do 25 km</option>
-      <!-- Wykonał: Jakub Tartas -->
-              <option value="poza_50">Poza - od 50 km</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="form-buttons">
-        <button type="submit">Wyślij</button>
-        <button type="reset" onclick="this.form.reset();">Reset</button>
-      </div>
-    </form>
-  </body>
+        <p align="left"> Zapoznaj się z naszymi ofertami oraz skorzystaj z darmowej obsługi klienta! </p>
+        <p align="left"> <a href="https://jakubtartas.github.io/spr1/tartas_menu.html">Wejdź na stronę menu</a> </p>
+
+        <footer>
+            &copy; 2024 Jakub Tartas
+        </footer>
+    </body>
 </html>
-<!-- Wykonał: Jakub Tartas -->
