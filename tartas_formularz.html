@@ -1,91 +1,133 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Formularz</title>
-<style>body {background-color: #add8e6;font-family: Arial, sans-serif;text-align: center;}label {display: block;}input[type="text"], input[type="time"], input[type="date"], select { width: 200px; padding: 5px; margin-bottom: 10px;}input[type="color"] {width: 50px;height: 30px;border: none;cursor:pointer;}.checkbox-group, .radio-group { text-align: left; display: inline-block;}.slider {display: flex;align-items: center;justify-content: center; gap: 15px;}input[type="range"] {-webkit-appearance: none;appearance: none;width: 150px; height: 8px;background: #ddd;outline: none; border-radius: 5px;transition: background 0.3s;}input[type="range"]::-webkit-slider-thumb {-webkit-appearance: none; appearance: none;width: 10px;height: 10px;padding: 10px 10px; border-radius: 50%;background: #0d364a; cursor: pointer;transition: background 0.3s;}input[type="range"]::-webkit-slider-thumb:hover {background: #0b4b6b;}.buttons { display: flex;justify-content: center;gap: 10px;}.buttons button {padding: 10px 20px 10px;border: none;border-radius: 5px;cursor: pointer;transition: transform 0.2s ease, background-color 0.3s;}.buttons button:hover {background-color: #dcdcdc;}.buttons button:active {transform: scale(0.95);}.radio-group-horizontal {display: flex;justify-content: center;gap: 20px;}</style></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            display: block;
+            margin: 10px 0;
+            padding: 5px;
+        }
+    </style>
+</head>
 <body>
-    <div class="container">
-        <h1>Formularz o....................zaproponowany przez nauczyciela</h1>
-        <form>
-            <div class="section">
-                <label for="imie">Imię</label>
-                <input type="text" id="imie" name="imie">
+        <h1>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</h1>
+        <form action="#" method="POST" onsubmit="location.reload(); return false;">
 
-                <label for="drugie_imie">Drugie imię</label>
-                <input type="text" id="drugie_imie" name="drugie_imie">
+            <div class="form-section">
+                <label for="login">Login:</label>
+                <input type="text" id="login" name="login" maxlength="30">
 
-                <label for="nazwisko">Nazwisko</label>
-                <input type="text" id="nazwisko" name="nazwisko">
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name">
 
-                <label for="pseudonim">Pseudonim artystyczny</label>
-                <input type="text" id="pseudonim" name="pseudonim">
+                <label for="password">Podaj hasło:</label>
+                <input type="password" id="password" name="password" maxlength="30">
+
+                <label for="surname">Nazwisko:</label>
+                <input type="text" id="surname" name="surname">
+
+                <label for="email">Podaj E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="address">Adres zamieszkania:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="phone">Numer telefonu (max 9 cyfr):</label>
+                <input type="text" id="phone" name="phone" maxlength="9">
             </div>
 
-            <div class="section">
-                <p>Czy umiesz programować?</p>
-                <div class="radio-group">
-                    <label><input type="radio" name="programowanie" value="tak"> Tak</label>
-                    <label><input type="radio" name="programowanie" value="nie"> Nie</label>
-                    <label><input type="radio" name="programowanie" value="nie_wiem"> Nie wiem</label>
-                </div>
-            </div>
-            
-            <div class="section">
-                <p>Wybierz opcję (4 możliwości):</p>
-                <div class="radio-group-horizontal">
-                    <label><input type="radio" name="opcje4" value="opcja1"> Opcja 1</label>
-                    <label><input type="radio" name="opcje4" value="opcja2"> Opcja 2</label>
-                    <label><input type="radio" name="opcje4" value="opcja3"> Opcja 3</label>
-                    <label><input type="radio" name="opcje4" value="opcja4"> Opcja 4</label>
-                </div>
+            <div class="form-section">
+                <label for="wojewodztwo">Województwo:</label>
+                <select id="wojewodztwo" name="wojewodztwo">
+                    <option value="pomorskie">Pomorskie</option>
+                    <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
+                    <option value="warmińsko-mazurkskie">Warmińsko-mazurskie</option>
+                    <option value="podlaskie">Podlaskie</option>
+                </select>
+
+                <label for="miasto">Miasto:</label>
+                <input type="text" id="miasto" name="miasto">
             </div>
 
-            <div class="section">
-                <p>Wybierz opcję (5 możliwości):</p>
-                <div class="radio-group-horizontal">
-                    <label><input type="radio" name="opcje5" value="opcja1"> Opcja 1</label>
-                    <label><input type="radio" name="opcje5" value="opcja2"> Opcja 2</label>
-                    <label><input type="radio" name="opcje5" value="opcja3"> Opcja 3</label>
-                    <label><input type="radio" name="opcje5" value="opcja4"> Opcja 4</label>
-                    <label><input type="radio" name="opcje5" value="opcja5"> Opcja 5</label>
-                </div>
+            <div class="form-section">
+                <label>Wybierz kolor oczu:</label> <br> <br><br>
+
+                <label for="niebieskie">Niebieskie</label>
+                    <input type="radio" id="niebieskie" name="kolor_oczu" value="niebieskie"><br>
+
+                <label for="brazowe">Brązowe</label>
+                    <input type="radio" id="brazowe" name="kolor_oczu" value="brazowe"><br>
+
+                <label for="zielone">Zielone</label>
+                    <input type="radio" id="zielone" name="kolor_oczu" value="zielone"><br>
+
+                <label for="szare">Szare</label>
+                   <input type="radio" id="szare" name="kolor_oczu" value="szare">
             </div>
 
-            <div class="section">
-                <label for="lokomocja" style="color: red;">Podaj środek lokomacji dojazdu do pracy</label>
-                <select id="lokomocja" name="lokomocja">
-                    <option value="autobus">Autobus</option>
-                    <option value="samochod">Samochód</option>
-                    <option value="rower">Rower</option>
-                    <option value="pieszo">Pieszo</option>
+            <div class="form-section">
+                <label>Sport:</label>
+                <select id="ulubiony_sport" name="ulubiony_sport">
+                    <option value="pilka_reczna">Piłka ręczna</option>
+                    <option value="pilka_nozna">Piłka nożna</option>
+                    <option value="koszykowka">Koszykówka</option>
+                    <option value="siatkowka">Siatkówka</option>
+                </select>
+
+                <label>Jak często trenujesz?</label>
+                <select id="czestotliwosc" name="czestotliwosc">
+                    <option value="raz">Raz w tygodniu</option>
+                    <option value="dwa">Dwa razy w tygodniu</option>
+                    <option value="trzy">Trzy razy w tygodniu</option>
+                    <option value="cztery">Cztery razy w tygodniu</option>
+                </select>
+
+                <label>Chcesz z nami trenować?</label> <br> <br>
+                <label for="tak">Tak</label>
+                    <input type="radio" id="tak" name="trenowanie" value="tak"> <br>
+
+                <label for="nie">Nie</label>
+                    <input type="radio" id="nie" name="trenowanie" value="nie"><br>
+
+                <label for="nie_wiem">Nie wiem</label>
+                    <input type="radio" id="nie_wiem" name="trenowanie" value="nie_wiem"><br>
+                
+            <label>Jak bardzo lubisz sport?</label><br><br>
+                <label for="bardzo">Bardzo</label>
+                <input type="radio" id="bardzo" name="lubi_sport" value="bardzo"><br>
+
+                <label for="srednio">Tak sobie</label>
+                    <input type="radio" id="srednio" name="lubi_sport" value="srednio"><br>
+            </div>
+
+            <div class="form-section">
+                <label for="informacje">Napisz dodatkowe informacje o sobie:</label>
+                <textarea id="informacje" name="informacje" maxlength="150" rows="4"></textarea>
+
+                <label>Mieszkasz w mieście czy poza?</label>
+                <select id="lokalizacja" name="lokalizacja">
+                    <option value="blisko_5">Blisko - do 5 km</option>
+                    <option value="blisko_10">Blisko - do 10 km</option>
+                    <option value="blisko_25">Poza - do 25 km</option>
+                    <option value="poza_50">Poza - od 50 km</option>
                 </select>
             </div>
 
-            <div class="section">
-                <label for="czas">Podaj czas</label>
-                <input type="time" id="czas" name="czas">
-
-                <label for="data">Podaj datę</label>
-                <input type="date" id="data" name="data">
-
-                <label for="kolor">Wybierz kolor</label>
-                <input type="color" id="kolor" name="kolor" value="#000000">
-            </div>
-
-            <div class="section slider">
-                <label for="wilgotnosc">Jaka jest wilgotność</label>
-                <input type="range" id="wilgotnosc" name="wilgotnosc" min="0" max="100">
-                <span>Proszę czekać...</span>
-            </div>
-
-            
-
-            <div class="buttons">
-                <button type="button">Przycisk niespodzianka</button>
-                <button type="reset">Reset</button>
-                <button type="submit">Wyślij zapytanie</button>
-            </div>
+            <button type="submit">Wyślij</button>
+            <button type="reset" onclick="this.form.reset();">Reset</button>
         </form>
-    </div>
 </body>
 </html>
