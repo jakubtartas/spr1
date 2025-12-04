@@ -4,133 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porównanie kart graficznych</title>
-    <style>
-        table {
-            width: 80%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            text-align: center;
-            font-family: Arial, sans-serif;
-            border: 3px solid #000;
-        }
-        th, td {
-            border: 1px solid #000;
-            padding: 5px;
-        }
-        th {
-            font-weight: bold;
-        }
-        .header-cell {
-            background-color: #003366;
-            color: #82c1ff;
-        }
-        .header-title {
-            background-color: #397be6;
-            color: #ffffff;
-            border: 3px solid #000;
-        }
-        .col-1 {
-            background-color: #9ccdff;
-            font-weight: bold;
-            color: #e08b8b;
-        }
-        .col-2 {
-            background-color: #69b4ff;
-            font-weight: bold;
-            color: #ff6969;
-        }
-        .col-3 {
-            background-color: #409fff;
-            color: #ff4242;
-            font-weight: bold;
-        }
-        .col-4 {
-            background-color: #1f8fff;
-            color: #f52525;
-            font-weight: bold;
-        }
-        .col-5 {
-            background-color: #006edb;
-            color: #ed0000;
-            font-weight: bold;
-        }
-        .row-2 td {
-            background-color: #003366;
-            color: #ffffff;
-        }
-        .footer-cell {
-            background-color: #397be6;
-            color: #ffffff;
-            font-size: 14px;
-            font-weight: bold;
-            border: 3px solid #000;
-        }
-    </style>
 </head>
 <body bgcolor="LightCyan">
-    <table>
-        <thead>
-            <tr>
-                <th colspan="5" class="header-title">Porównanie kart graficznych &ndash; Tartas Jakub 2Fg2</th>
-            </tr>
-            <tr class="row-2">
-                <th class="header-cell">Model karty graficznej</th>
-                <th class="header-cell">Taktowanie bazowe (MHz)</th>
-                <th class="header-cell">Rozmiar pamięci (GB)</th>
-                <th class="header-cell">Szyna pamięci (bit)</th>
-                <th class="header-cell">Typ chłodzenia</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="col-1">RTX 3080</td>
-                <td class="col-2">1440</td>
-                <td class="col-3">10</td>
-                <td class="col-4">320</td>
-                <td class="col-5" rowspan="7">Wentylator</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 3070</td>
-                <td class="col-2">1500</td>
-                <td class="col-3">8</td>
-                <td class="col-4">256</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 3060</td>
-                <td class="col-2">1320</td>
-                <td class="col-3">12</td>
-                <td class="col-4">192</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 2080</td>
-                <td class="col-2">1515</td>
-                <td class="col-3">8</td>
-                <td class="col-4">256</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 2070</td>
-                <td class="col-2">1410</td>
-                <td class="col-3">8</td>
-                <td class="col-4">256</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 2060</td>
-                <td class="col-2">1365</td>
-                <td class="col-3">6</td>
-                <td class="col-4">192</td>
-            </tr>
-            <tr>
-                <td class="col-1">RTX 2050</td>
-                <td class="col-2">1470</td>
-                <td class="col-3">4</td>
-                <td class="col-4">128</td>
-            </tr>
-            <tr>
-                <td colspan="5" class="footer-cell">Porównanie kart graficznych</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <p align=center> <A HREF="https://jakubtartas.github.io/"> Powrót </A></p> <br>
+
+<table style="width:80%; margin:0 auto; border-collapse:collapse; text-align:center; font-family:Arial, sans-serif; border:3px solid #000;">
+
+    <thead>
+        <tr>
+            <th colspan="5" 
+                style="background-color:#397be6; color:#ffffff; border:3px solid #000; font-weight:bold; padding:5px;">
+                Porównanie kart graficznych &ndash; Tartas Jakub 2Fg2
+            </th>
+        </tr>
+
+        <tr>
+            <th style="background-color:#003366; color:#82c1ff; border:1px solid #000; padding:5px;">Model karty graficznej</th>
+            <th style="background-color:#003366; color:#82c1ff; border:1px solid #000; padding:5px;">Taktowanie bazowe (MHz)</th>
+            <th style="background-color:#003366; color:#82c1ff; border:1px solid #000; padding:5px;">Rozmiar pamięci (GB)</th>
+            <th style="background-color:#003366; color:#82c1ff; border:1px solid #000; padding:5px;">Szyna pamięci (bit)</th>
+            <th style="background-color:#003366; color:#82c1ff; border:1px solid #000; padding:5px;">Typ chłodzenia</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 3080</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1440</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">10</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">320</td>
+            <td rowspan="7" style="background-color:#006edb; color:#ed0000; font-weight:bold; border:1px solid #000; padding:5px;">Wentylator</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 3070</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1500</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">8</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">256</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 3060</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1320</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">12</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">192</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 2080</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1515</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">8</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">256</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 2070</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1410</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">8</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">256</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 2060</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1365</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">6</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">192</td>
+        </tr>
+
+        <tr>
+            <td style="background-color:#9ccdff; color:#e08b8b; font-weight:bold; border:1px solid #000; padding:5px;">RTX 2050</td>
+            <td style="background-color:#69b4ff; color:#ff6969; font-weight:bold; border:1px solid #000; padding:5px;">1470</td>
+            <td style="background-color:#409fff; color:#ff4242; font-weight:bold; border:1px solid #000; padding:5px;">4</td>
+            <td style="background-color:#1f8fff; color:#f52525; font-weight:bold; border:1px solid #000; padding:5px;">128</td>
+        </tr>
+
+        <tr>
+            <td colspan="5" 
+                style="background-color:#397be6; color:#ffffff; font-size:14px; font-weight:bold; border:3px solid #000; padding:5px;">
+                Porównanie kart graficznych
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br>
+
+<p align="center">
+    <a href="https://jakubtartas.github.io/">Powrót</a>
+</p>
+
+<br>
+
 </body>
 </html>
