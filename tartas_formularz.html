@@ -1,193 +1,181 @@
 <!DOCTYPE html>
 <!-- Wykonał: Jakub Tartas -->
 <html lang="pl">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wykonał: Tartas</title>
-    <!-- Wykonał: Jakub Tartas -->
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #add8e6;
-      }
+</head>
 
-      .form-section {
-        margin-bottom: 5px;
-      }
+<body style="font-family:Arial, sans-serif; background-color:#add8e6;">
 
-      label {
-        font-weight: bold;
-      }
+<center>
+    <font size="6"><i><b>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</b></i></font><br><br>
+</center>
 
-      sublabel {
-        font-weight: bold;
-        font-size: 0.9em;
-      }
+<form enctype="text/plain" action="mailto:minibimo0@gmail.com" method="post">
 
-      input,
-      select,
-      textarea,
-      button {
-        display: block;
-        margin: 6px 0;
-        padding: 5px;
-      }
+<table style="width:100%; border-collapse:collapse;">
+<tr>
+<td style="width:50%; vertical-align:top; padding-right:20px;">
 
-      .form-container {
-        display: flex;
-      }
+    <label for="login" style="font-weight:bold;">Login:</label>
+    <input type="text" id="login" name="login" maxlength="30"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      .left-section {
-        flex: 1;
-      }
+    <label for="name" style="font-weight:bold;">Imię:</label>
+    <input type="text" id="name" name="name"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      .right-section {
-        flex: 1;
-        margin-left: 20px;
-      }
+    <label for="password" style="font-weight:bold;">Hasło:</label>
+    <input type="password" id="password" name="password" maxlength="30"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      .form-buttons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
+    <label for="surname" style="font-weight:bold;">Nazwisko:</label>
+    <input type="text" id="surname" name="surname"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      .form-buttons button {
-        flex: 1;
-        max-width: 300px;
-        padding: 15px;
-        font-size: 18px;
-      }
+    <label for="email" style="font-weight:bold;">Adres E-mail:</label>
+    <input type="email" id="email" name="email"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      textarea {
-        resize: none;
-      }
+    <label for="address" style="font-weight:bold;">Adres zamieszkania:</label>
+    <input type="text" id="address" name="address"
+           style="display:block; margin:6px 0; padding:5px;">
 
-      .horizontal-options {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-      }
-    </style>
-    <!-- Wykonał: Jakub Tartas -->
-  </head>
-  <body>
-    <center>
-      <font size="6"><i><b>Ankieta Wyboru Do Szkolnych Drużyn Sportowych</b></i></font><br><br>
-    </center>
-    <form enctype="text/plain" action="mailto:minibimo0@gmail.com" subject="formularz_dane" method="Post"> 
-      <div class="form-container">
-        <div class="left-section">
-          <div class="form-section">
-    <!-- Wykonał: Jakub Tartas -->
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login" maxlength="30">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name">
-            <label for="password">Hasło:</label>
-            <input type="password" id="password" name="password" maxlength="30">
-            <label for="surname">Nazwisko:</label>
-            <!-- Wykonał: Jakub Tartas -->
-            <input type="text" id="surname" name="surname">
-            <label for="email">Adres E-mail:</label>
-            <input type="email" id="email" name="email">
-            <label for="address">Adres zamieszkania:</label>
-            <input type="text" id="address" name="address">
-            <label for="phone">Numer telefonu (max 9 cyfr):</label>
-            <input type="text" id="phone" name="phone" maxlength="9">
-          </div>
-     <!-- Wykonał: Jakub Tartas -->
-          <div class="form-section">
-            <label for="wojewodztwo">Województwo:</label>
-            <select id="wojewodztwo" name="wojewodztwo">
-              <option value="pomorskie">Pomorskie</option>
-              <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
-              <option value="warmińsko-mazurkskie">Warmińsko-mazurskie</option>
-              <option value="podlaskie">Podlaskie</option>
-            </select>
-            <label for="miasto">Miasto:</label>
-            <input type="text" id="miasto" name="miasto">
-          </div>
-          <div class="form-section">
-            <label>Wybierz kolor oczu:</label>
-            <br>
-            <br>
-            <sublabel for="niebieskie">Niebieskie</sublabel>
-            <input type="radio" id="niebieskie" name="kolor_oczu" value="niebieskie">
-<!-- Wykonał: Jakub Tartas -->
-            <sublabel for="brazowe">Brązowe</sublabel>
-            <input type="radio" id="brazowe" name="kolor_oczu" value="brazowe">
+    <label for="phone" style="font-weight:bold;">Numer telefonu (max 9 cyfr):</label>
+    <input type="text" id="phone" name="phone" maxlength="9"
+           style="display:block; margin:6px 0; padding:5px;">
 
-            <sublabel for="zielone">Zielone</sublabel>
-            <input type="radio" id="zielone" name="kolor_oczu" value="zielone">
+    <br>
 
-            <sublabel for="szare">Szare</sublabel>
-            <input type="radio" id="szare" name="kolor_oczu" value="szare">
-          </div>
-        </div>
-        <div class="right-section">
-          <div class="form-section">
-            <label>Sport:</label>
-            <select id="ulubiony_sport" name="ulubiony_sport">
-              <option value="pilka_reczna">Piłka ręczna</option>
-              <option value="pilka_nozna">Piłka nożna</option>
-     <!-- Wykonał: Jakub Tartas -->
-              <option value="koszykowka">Koszykówka</option>
-              <option value="siatkowka">Siatkówka</option>
-            </select>
-            <label>Jak często trenujesz?</label>
-            <select id="czestotliwosc" name="czestotliwosc">
-              <option value="raz">Raz w tygodniu</option>
-              <option value="dwa">Dwa razy w tygodniu</option>
-              <option value="trzy">Trzy razy w tygodniu</option>
-              <option value="cztery">Cztery razy w tygodniu</option>
-            </select>
-            <!-- Wykonał: Jakub Tartas -->
-            <label>Chcesz z nami trenować?</label>
-            <br>
-            <br>
-            <sublabel for="tak">Tak</sublabel>
-            <input type="radio" id="tak" name="trenowanie" value="tak">
+    <label for="wojewodztwo" style="font-weight:bold;">Województwo:</label>
+    <select id="wojewodztwo" name="wojewodztwo"
+            style="display:block; margin:6px 0; padding:5px;">
+        <option value="pomorskie">Pomorskie</option>
+        <option value="zachodnio-pomorskie">Zachodnio-pomorskie</option>
+        <option value="warmińsko-mazurkskie">Warmińsko-mazurskie</option>
+        <option value="podlaskie">Podlaskie</option>
+    </select>
 
-            <sublabel for="nie">Nie</sublabel>
-            <input type="radio" id="nie" name="trenowanie" value="nie">
-<!-- Wykonał: Jakub Tartas -->
-            <sublabel for="nie_wiem">Nie wiem</sublabel>
-            <input type="radio" id="nie_wiem" name="trenowanie" value="nie_wiem">
-            <br>
-            <label>Jak bardzo lubisz sport?</label>
-            <br>
-            <div class="horizontal-options">
-              <sublabel for="bardzo">Bardzo</sublabel>
-              <input type="radio" id="bardzo" name="lubi_sport" value="bardzo">
-<br><!-- Wykonał: Jakub Tartas -->
-              <sublabel for="srednio">Tak sobie</sublabel>
-              <input type="radio" id="srednio" name="lubi_sport" value="srednio">
+    <label for="miasto" style="font-weight:bold;">Miasto:</label>
+    <input type="text" id="miasto" name="miasto"
+           style="display:block; margin:6px 0; padding:5px;">
 
-            </div>
-          </div>
-          <div class="form-section">
-            <label for="informacje">Napisz dodatkowe informacje o sobie (max 150 znaków):</label>
-            <textarea id="informacje" name="informacje" maxlength="150" rows="4" style="resize: none;"></textarea>
-            <label>Mieszkasz w mieście czy poza?</label>
-            <select id="lokalizacja" name="lokalizacja">
-              <option value="blisko_5">Blisko - do 5 km</option>
-              <option value="blisko_10">Blisko - do 10 km</option>
-              <option value="blisko_25">Poza - do 25 km</option>
-              <option value="poza_50">Poza - od 50 km</option>
-            </select>
-          </div>
-        </div>
-      <!-- Wykonał: Jakub Tartas -->
-      </div>
-      <div class="form-buttons">
-        <button type="submit">Wyślij</button>
-        <button type="reset" onclick="this.form.reset();">Reset</button>
-      </div>
-    </form>
-    <p align="left"> <a href="https://jakubtartas.github.io/">Powrót</a> </p>
-  </body>
+    <br>
+
+    <label style="font-weight:bold;">Wybierz kolor oczu:</label><br><br>
+
+    <span style="font-weight:bold; font-size:0.9em;">Niebieskie</span>
+    <input type="radio" name="kolor_oczu" value="niebieskie"
+           style="display:block; margin:6px 0;">
+
+    <span style="font-weight:bold; font-size:0.9em;">Brązowe</span>
+    <input type="radio" name="kolor_oczu" value="brazowe"
+           style="display:block; margin:6px 0;">
+
+    <span style="font-weight:bold; font-size:0.9em;">Zielone</span>
+    <input type="radio" name="kolor_oczu" value="zielone"
+           style="display:block; margin:6px 0;">
+
+    <span style="font-weight:bold; font-size:0.9em;">Szare</span>
+    <input type="radio" name="kolor_oczu" value="szare"
+           style="display:block; margin:6px 0;">
+
+</td>
+
+<td style="width:50%; vertical-align:top;">
+
+    <label style="font-weight:bold;">Sport:</label>
+    <select name="ulubiony_sport"
+            style="display:block; margin:6px 0; padding:5px;">
+        <option value="pilka_reczna">Piłka ręczna</option>
+        <option value="pilka_nozna">Piłka nożna</option>
+        <option value="koszykowka">Koszykówka</option>
+        <option value="siatkowka">Siatkówka</option>
+    </select>
+
+    <label style="font-weight:bold;">Jak często trenujesz?</label>
+    <select name="czestotliwosc"
+            style="display:block; margin:6px 0; padding:5px;">
+        <option value="raz">Raz w tygodniu</option>
+        <option value="dwa">Dwa razy w tygodniu</option>
+        <option value="trzy">Trzy razy w tygodniu</option>
+        <option value="cztery">Cztery razy w tygodniu</option>
+    </select>
+
+    <br>
+
+    <label style="font-weight:bold;">Chcesz z nami trenować?</label><br><br>
+
+    <span style="font-weight:bold; font-size:0.9em;">Tak</span>
+    <input type="radio" name="trenowanie" value="tak"
+           style="display:block; margin:6px 0;">
+
+    <span style="font-weight:bold; font-size:0.9em;">Nie</span>
+    <input type="radio" name="trenowanie" value="nie"
+           style="display:block; margin:6px 0;">
+
+    <span style="font-weight:bold; font-size:0.9em;">Nie wiem</span>
+    <input type="radio" name="trenowanie" value="nie_wiem"
+           style="display:block; margin:6px 0;">
+
+    <br>
+
+    <label style="font-weight:bold;">Jak bardzo lubisz sport?</label><br><br>
+
+    <table style="border-collapse:collapse;">
+    <tr>
+        <td style="padding-right:10px; font-weight:bold; font-size:0.9em;">Bardzo</td>
+        <td><input type="radio" name="lubi_sport" value="bardzo"></td>
+    </tr>
+    <tr>
+        <td style="padding-right:10px; font-weight:bold; font-size:0.9em;">Tak sobie</td>
+        <td><input type="radio" name="lubi_sport" value="srednio"></td>
+    </tr>
+    </table>
+
+    <br>
+
+    <label for="informacje" style="font-weight:bold;">
+        Napisz dodatkowe informacje o sobie (max 150 znaków):
+    </label>
+    <textarea id="informacje" name="informacje" maxlength="150" rows="4"
+              style="resize:none; display:block; margin:6px 0; padding:5px;"></textarea>
+
+    <label style="font-weight:bold;">Mieszkasz w mieście czy poza?</label>
+    <select name="lokalizacja"
+            style="display:block; margin:6px 0; padding:5px;">
+        <option value="blisko_5">Blisko - do 5 km</option>
+        <option value="blisko_10">Blisko - do 10 km</option>
+        <option value="blisko_25">Poza - do 25 km</option>
+        <option value="poza_50">Poza - od 50 km</option>
+    </select>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<table style="margin:auto;">
+<tr>
+<td>
+    <button type="submit"
+            style="padding:15px; font-size:18px; width:200px;">Wyślij</button>
+</td>
+<td>
+    <button type="reset"
+            style="padding:15px; font-size:18px; width:200px;">Reset</button>
+</td>
+</tr>
+</table>
+
+</form>
+
+<p align="left">
+    <a href="https://jakubtartas.github.io/">Powrót</a>
+</p>
+
+</body>
 </html>
-<!-- Wykonał: Jakub Tartas -->
